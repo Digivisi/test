@@ -17,9 +17,9 @@ test('case 2', () => {
 });
 
 test('case 3', () => {
-    let a1 = [1, 2, 3];
+    let a1 = [10, 2, 3];
     let a2 = [25, 72, 16];
-    expect(calculateRemainders(a1, a2)).toEqual([20, 62, 1]);
+    expect(calculateRemainders(a1, a2)).toEqual([5, 68, 10]);
 });
 
 
@@ -118,6 +118,36 @@ test('case 16', () => {
     let a1 = [1];
     let a2 = [-1];
     expect(calculateRemainders(a1, a2)).toEqual([-1]);
+});
+
+test('case 16', () => {
+    let a1 = [1, 1];
+    let a2 = [10, 10];
+    expect(calculateRemainders(a1, a2)).toEqual([0, 0]);
+});
+
+test('case 16', () => {
+    let a1 = [1, 5];
+    let a2 = [10, 10];
+    expect(calculateRemainders(a1, a2)).toEqual([8, 0]);
+});
+
+test('case 17', () => {
+    let a1 = [5, 5];
+    let a2 = [10, 10];
+    expect(calculateRemainders(a1, a2)).toEqual([0, 0]);
+});
+
+test('case 17', () => {
+    let a1 = [5, 0];
+    let a2 = [0, 10];
+    expect(calculateRemainders(a1, a2)).toEqual([0, 10]);
+});
+
+test('case 17', () => {
+    let a1 = [5, 1];
+    let a2 = [10, 10];
+    expect(calculateRemainders(a1, a2)).toEqual([0, 8]);
 });
 
 
